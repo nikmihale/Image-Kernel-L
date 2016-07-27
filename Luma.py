@@ -41,6 +41,5 @@ for i in range(width):
 				S += pix[pixelposX, pixelposY] * float( ker[k][l] ) / sum
 		draw.point( (i, j), int(S) )
 kernel.close()
-#new_image = Image.merge("YCbCr", (new_image, Cb, Cr) )
 new_image.save("convoluted.jpg", "JPEG")
 del draw
